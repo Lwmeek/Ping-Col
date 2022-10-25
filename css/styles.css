@@ -1,0 +1,106 @@
+/* Colors */
+
+:root {
+	--clr-blue: hsl(223, 87%, 63%);
+	--clr-pale-blue: hsl(223, 100%, 88%);
+	--clr-light-red: hsl(354, 100%, 66%);
+	--clr-gray: hsl(0, 0%, 59%);
+	--clr-Vdark-blue: hsl(209, 33%, 12%);
+}
+
+/* General styling */
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 2rem;
+	font-family: "Libre Franklin", sans-serif;
+	font-weight: 300;
+}
+
+/* Containers */
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.main-container {
+}
+
+/* Images */
+
+.logo {
+	width: 17%;
+}
+
+.dashboard {
+	width: 90%;
+}
+
+/* Content */
+
+h1 {
+	font-weight: 300;
+	color: var(--clr-gray);
+}
+
+span {
+	font-weight: 700;
+	color: var(--clr-Vdark-blue);
+}
+
+p {
+	color: var(--clr-Vdark-blue);
+}
+
+/* Form */
+
+.form {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	margin: 0 auto;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+/* Email / Buttons */
+
+.btn {
+	outline: none;
+	border-radius: 30px;
+	padding: 1.5rem;
+	width: 100%;
+	font-size: 1.5rem;
+}
+
+.btn-primary {
+	border: 1px solid var(--clr-pale-blue);
+}
+
+::placeholder {
+	color: var(--clr-pale-blue);
+}
+
+.btn-secondary {
+	font-weight: 600;
+	color: white;
+	background: var(--clr-blue);
+	border: none;
+	margin-bottom: 8rem;
+	box-shadow: 0 7px 15px var(--clr-pale-blue);
+	transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+	cursor: pointer;
+	background: hsla(223, 87%, 63%, 0.801);
+}
