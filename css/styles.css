@@ -10,13 +10,18 @@
 
 /* General styling */
 
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Libre Franklin", sans-serif;;
+}
+
 html {
 	font-size: 62.5%;
 }
 
 body {
-	font-size: 2rem;
-	font-family: "Libre Franklin", sans-serif;
+	font-size: 2rem; 
 	font-weight: 300;
 }
 
@@ -32,13 +37,11 @@ body {
 	text-align: center;
 }
 
-.main-container {
-}
-
 /* Images */
 
 .logo {
 	width: 17%;
+	margin-bottom: 2.7rem;
 }
 
 .dashboard {
@@ -48,8 +51,10 @@ body {
 /* Content */
 
 h1 {
+	font-size: 2.7rem;
 	font-weight: 300;
 	color: var(--clr-gray);
+	margin-bottom: 2.5rem;
 }
 
 span {
@@ -59,6 +64,8 @@ span {
 
 p {
 	color: var(--clr-Vdark-blue);
+	font-size: 1.5rem;
+	margin-bottom: 3.5rem;
 }
 
 /* Form */
@@ -66,18 +73,25 @@ p {
 .form {
 	display: flex;
 	flex-direction: column;
-	width: 70%;
+	width: 80%;
 	margin: 0 auto;
 	align-items: center;
-	gap: 1.5rem;
+}
+
+.error-message {
+	
 }
 
 /* Email / Buttons */
 
+#email {
+	margin-bottom: .5rem;
+}
+
 .btn {
 	outline: none;
 	border-radius: 30px;
-	padding: 1.5rem;
+	padding: 1.5rem 3rem;
 	width: 100%;
 	font-size: 1.5rem;
 }
@@ -95,6 +109,7 @@ p {
 	color: white;
 	background: var(--clr-blue);
 	border: none;
+	margin-top: 1rem;
 	margin-bottom: 8rem;
 	box-shadow: 0 7px 15px var(--clr-pale-blue);
 	transition: all 0.2s;
@@ -103,4 +118,13 @@ p {
 .btn-secondary:hover {
 	cursor: pointer;
 	background: hsla(223, 87%, 63%, 0.801);
+}
+
+#error {
+	display: none;
+	margin-bottom: 1.5rem;
+	font-weight: 300;
+	color: var(--clr-light-red);
+	font-size: 1.2rem;
+	font-style: italic;
 }
