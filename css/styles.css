@@ -13,7 +13,7 @@
 * {
 	margin: 0;
 	box-sizing: border-box;
-	font-family: "Libre Franklin", sans-serif;;
+	font-family: "Libre Franklin", sans-serif;
 }
 
 html {
@@ -21,7 +21,7 @@ html {
 }
 
 body {
-	font-size: 2rem; 
+	font-size: 2rem;
 	font-weight: 300;
 }
 
@@ -78,14 +78,10 @@ p {
 	align-items: center;
 }
 
-.error-message {
-	
-}
-
 /* Email / Buttons */
 
 #email {
-	margin-bottom: .5rem;
+	margin-bottom: 0.5rem;
 }
 
 .btn {
@@ -124,7 +120,6 @@ p {
 	display: none;
 	margin-bottom: 1.5rem;
 	font-weight: 300;
-	color: var(--clr-light-red);
 	font-size: 1.2rem;
 	font-style: italic;
 }
